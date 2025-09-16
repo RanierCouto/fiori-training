@@ -37,8 +37,9 @@
     "dependencies": {
       "minUI5Version": "1.140.0",
       "libs": {
-        "sap.m": {},
-        "sap.ui.core": {}
+        "sap.tnt": {},
+				"sap.m": {},
+				"sap.ui.core": {}
       }
     },
     "contentDensities": {
@@ -93,6 +94,16 @@
       "type": "XML",
       "id": "App",
       "async": true
-    }
+    },
+		"config": {
+			"sample": {
+				"stretch": true,
+				"files": [
+					"app.view.xml",
+					"app.controller.js",
+					"manifest.json"
+				]
+			}
+		}
   }
 }

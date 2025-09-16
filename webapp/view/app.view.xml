@@ -2,5 +2,26 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-    </Page>
+        <ScrollContainer id="idNavbar" vertical="true" height="100%">
+            <tnt:ToolHeader id="shellLikeToolHeaderOnlyMandatoryControls" class="sapUiTinyMargin sapUiLargeMarginTop">
+                <Image id="idImage" src="test-resources/sap/tnt/images/SAP_Logo.png" decorative="false" press="onLogoPressed" tooltip="SAP Logo" width="60px" height="30px">
+                    <layoutData>
+                        <OverflowToolbarLayoutData id="idOverflow1" priority="NeverOverflow"/>
+                    </layoutData>
+                </Image>
+                <Title id="idTitle" text="Prоduct Name" wrapping="false">
+                    <layoutData>
+                        <OverflowToolbarLayoutData id="idOverflow2" priority="Disappear"/>
+                    </layoutData>
+                </Title>
+                <ToolbarSpacer id="idToolbar" />
+                <Avatar id="idAvatar" src="test-resources/sap/tnt/images/Woman_avatar_01.png" displaySize="XS" press=".onAvatarPressed" tooltip="Profile">
+                    <layoutData>
+                        <OverflowToolbarLayoutData id="idOverflow3" priority="NeverOverflow"/>
+                    </layoutData>
+                </Avatar>
+            </tnt:ToolHeader>
+        </ScrollContainer>
+        <Text id="idTxt" text="Teste teste teste"></Text>
+    </Page>    
 </mvc:View>
